@@ -11,7 +11,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'g++ -o PES1UG22CS187-1 main.cpp' // Compiles C++ file
+                sh 'g++ -o PES1UG22CS187-1 mane.cpp' // Compiles C++ file
             }
         }
 
@@ -29,7 +29,7 @@ pipeline {
     }
 
     post {
-        failure
+        failure {
             echo 'Pipeline failed' // Post action in case of failure
         }
     }
